@@ -1,18 +1,16 @@
 .container {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    /* Primera columna de 200px, segunda columna con espacio disponible */
-    gap: 20px;
-    /* Espacio entre columnas */
+    display: flex;
+    flex-direction: column;
 }
 
 .menu {
+    width: 15%;
     background-color: #333;
     color: white;
-    padding: 20px;
 }
 
 .secciones {
+    flex: 1;
     background-color: #f0f0f0;
-    padding: 20px;
+    
 }
