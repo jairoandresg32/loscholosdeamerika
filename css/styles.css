@@ -1,47 +1,20 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Estilos para la sección de inicio */
-.inicio {
-    position: relative;
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
     height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background-color: #333;
     color: white;
     display: flex;
-}
-
-.menu-container {
-        position: sticky;
-        top: 0;
-        right: 0;
-        /* Alinea el menú a la derecha */
-        width: 20%;
-        /* Ancho del menú */
-        height: 100vh;
-        background-color: rgba(0, 0, 0, 0.5);
-        /* Fondo semi-transparente para mayor contraste */
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-}
-
-.menu {
-    padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu ul {
     list-style: none;
     padding: 0;
-    margin: 0%;
 }
 
 .menu li {
@@ -49,67 +22,11 @@ body {
 }
 
 .menu a {
+    text-decoration: none;
     color: white;
-        text-decoration: none;
-        font-size: 20px;
-        padding: 10px 20px;
-        display: inline-block;
-        border-radius: 5px;
-}
-.menu a {
-    background-color: #333;
-    transition: background-color 0.3s ease;
-    /* Transición suave al cambiar el color de fondo */
 }
 
-/* Estilo para el enlace del menú cuando se pasa el mouse */
-.menu a:hover {
-    background-color: #555;
-}
-
-/* Estilos para las secciones posteriores */
-.seccion {
-    height: 100vh;
-    padding: 20px;
-    background-color: #f0f0f0;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Estilos específicos para cada sección si es necesario */
-
-#biografia {
-    background-color: #f2f2f2;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.biografia-texto {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.biografia-texto h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.biografia-texto p {
-    font-size: 18px;
-    color: #666;
-    line-height: 1.6;
-    text-align: justify;
-}
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-.carousel-container {
-    position: center;
+.secciones {
+    margin-left: 220px;
+    /* Ajusta el margen izquierdo para dejar espacio para el menú */
 }
