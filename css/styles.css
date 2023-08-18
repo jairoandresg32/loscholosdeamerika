@@ -1,16 +1,98 @@
-.container {
-    display: flex;
-    flex-direction: column;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 .menu {
-    width: 15%;
-    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
+    padding: 10px 0;
+    z-index: 1000;
+    display: none;
+    transition: top 0.3s;
 }
 
-.secciones {
-    flex: 1;
+.menu ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #f0f0f0;
+}
+
+section {
+    padding: 2% 1%;
+    display: flexbox;
+    justify-content: center;
+}
+
+.inicio {
     background-color: #f0f0f0;
-    
+    text-align: center;
+    width: auto;
+}
+
+.imagen-titulo {
+    text-align: center;
+}
+
+.imagen-titulo img {
+    width: 100%;
+}
+
+.imagen-titulo h1 {
+    font-size: 48px;
+    font-family: "Georgia", serif;
+    margin-top: 20px;
+}
+
+.historia,
+.servicios,
+.contacto {
+    background-color: #fff;
+    color: #333;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.servicios h2,
+.contacto h2 {
+    margin-bottom: 30px;
+}
+
+.servicios ul {
+    padding-left: 0;
+    text-align: center;
+}
+
+.servicios li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
